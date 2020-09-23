@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Daniel Nijdl">
+    <!--^^^^THIS IS REQUIRED FOR YOUR GRADES IN THE FUTURE ^^^^-->
+    <meta name="description" content="">
+
+    <meta property="og:image" content="" type="image/x-icon">
+    <meta property="og:description" content="My">
+    <meta property="og:title" content="">
+
+    <title>Pizza Form Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel ="shortcut icon" href="iconthingpng.png" type="image/x-icon">
+</head>
+<body>
+    <form action="data.json" method="POST">
+        <fieldset style="border: 3px solid blue">
+            <!-- input boxes -->
+            <legend>User Information</legend>
+            <ul>
+                <li><label for="UN">User Name</label>
+                <input type="text"id="UN" name="user.UN"></li>
+
+                <li><label for="PW">Password</label>
+                <input type="text"id="PW" name="user.PW"></li>
+            </ul>
+        </fieldset>
+        <fieldset style="border: 3px solid blue">
+            <!-- Radio Buttons -->
+            <legend>What drink do you want?</legend>
+            <ul>
+                <li><input type="radio" id="drinks" name="user.drinks">Coke</li>
+                <li><input type="radio" id="drinks" name="user.drinks">Diet Coke</li>
+                <li><input type="radio" id="drinks" name="user.drinks">Sprite</li>
+                <li><input type="radio" id="drinks" name="user.drinks">Water</li>
+            </ul>
+        </fieldset>
+        <fieldset style="border: 3px solid blue">
+            <!-- Checkboxes -->
+            <legend>Pizza Preferance</legend>
+            <ul>
+                <li><input type="checkbox" id="pizza" name="user.pizza.plain">Plain</li>
+                <li><input type="checkbox" id="pizza" name="user.pizza.pepperone">Pepperone</li>
+                <li><input type="checkbox" id="pizza" name="user.pizza.chicken">Chicken</li>
+                <li><input type="checkbox" id="pizza" name="user.pizza.sausage">Sausage</li>
+            </ul>
+        </fieldset>
+        <fieldset style="border: 3px solid blue">
+            <!-- Text area -->
+            <legend>Special Instructions</legend>
+            <ul>
+                <li><label for="Sinstructions">Special Instructions</label></li>
+                <textarea name="user.comment" id="Sinstructions" cols="30" rows="10"></textarea><br>
+
+                <button type="submit" style="float:left">Submit</button>
+
+        </ul>
+
+
+        </fieldset>
+
+
+
+
+    </form>
+
+
+
+
+
+</body>
+</html>
