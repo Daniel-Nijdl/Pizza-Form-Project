@@ -18,18 +18,18 @@
     <form action="data.json" method="POST">
         <fieldset style="border: 3px solid blue">
             <!-- input boxes -->
-            <legend>User Information</legend>
+            <legend><strong>Information</strong></legend>
             <ul>
                 <li><label for="UN">User Name</label>
-                <input type="text"id="UN" name="user.UN"></li>
+                <input type="text"id="UN" name="user.UN" required></li>
 
                 <li><label for="PW">Password</label>
-                <input type="text"id="PW" name="user.PW"></li>
+                <input type="text"id="PW" name="user.PW" required></li>
             </ul>
         </fieldset>
         <fieldset style="border: 3px solid blue">
             <!-- Radio Buttons -->
-            <legend>What drink do you want?</legend>
+            <legend><strong>What drink do you want?</strong></legend>
             <ul>
                 <li><input type="radio" id="drinks" name="user.drinks">Coke</li>
                 <li><input type="radio" id="drinks" name="user.drinks">Diet Coke</li>
@@ -39,7 +39,7 @@
         </fieldset>
         <fieldset style="border: 3px solid blue">
             <!-- Checkboxes -->
-            <legend>Pizza Preferance</legend>
+            <legend><strong>Preferance</strong></legend>
             <ul>
                 <li><input type="checkbox" id="pizza" name="user.pizza.plain">Plain</li>
                 <li><input type="checkbox" id="pizza" name="user.pizza.pepperone">Pepperone</li>
@@ -48,27 +48,25 @@
             </ul>
         </fieldset>
         <fieldset style="border: 3px solid blue">
+            <!--Current Time-->
+                <legend><strong>What time is it?</strong></legend>
+            <ul>
+                <li><input type="time" id="curtime" name="curtime" required></li>
+            </ul>
+        </fieldset>
+        <fieldset style="border: 3px solid blue">
+            
             <!-- Text area -->
-            <legend>Special Instructions</legend>
+            <legend><strong>Special Instructions</strong></legend>
             <ul>
                 <li><label for="Sinstructions">Special Instructions</label></li>
                 <textarea name="user.comment" id="Sinstructions" cols="30" rows="10"></textarea><br>
-                
+
                 <button type="submit">Submit</button>
-
+                
+                
         </ul>
-
-
         </fieldset>
-
-
-
-
     </form>
-
-
-
-
-
 </body>
 </html>
